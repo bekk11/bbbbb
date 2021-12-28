@@ -12,7 +12,7 @@ CHANNEL_ID = '-1001698705173'
 def get_text_messages(message):
     if message.text == "Jasur":
         bot.send_message(message.from_user.id, "Sizga mumkin emas uzur")
-        bot.send_message(CHANNEL_ID, "Yedi boru lekin")
+        bot.send_message(CHANNEL_ID, message.text)
     elif message.text == "/help":
         bot.send_message(message.from_user.id, "Напиши привет")
     else:
